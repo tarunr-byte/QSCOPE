@@ -1,0 +1,12 @@
+.venv/
+venv/
+.pytest_cache/
+tests/
+atom_qsa.db
+atom_qsa.db-journal
+atom_qsa.db-wal
+node_modules/
+frontend/node_modules/
+create.py
+create_modules.py
+generate_data.py

@@ -1,0 +1,31 @@
+# ATOM-QSA Simulation Profile
+# For controlled synthetic algorithm tests
+
+mode: synthetic
+window_size: 60
+baseline_windows: 8
+
+measurement_p0: 0.5
+measurement_amplitude: 0.5
+measurement_contrast: 0.88
+measurement_phi0: 0.0
+
+uncertainty_profile: wide
+threshold: 0.067349
+
+cusum_k: 0.002
+cusum_h: 0.05
+
+atom_count_default: 2000
+shots: 2000
+seed: 42
+
+database_path: atom_qsa_sim.db
+log_level: DEBUG
+
+cors_origins:
+  - http://localhost:3000
+
+max_upload_size_mb: 50
+quantum_enabled: true
+quantum_backend: auto

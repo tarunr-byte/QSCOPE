@@ -1,0 +1,28 @@
+# Virtual Environment
+.venv/
+venv/
+ENV/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Node & Frontend
+node_modules/
+frontend/node_modules/
+frontend/dist/
+.vercel/
+
+# SQLite databases
+*.db
+*.sqlite3
+atom_qsa.db
+atom_qsa.db-journal
+atom_qsa.db-wal
+
+# OS files
+.DS_Store
+Thumbs.db

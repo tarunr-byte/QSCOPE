@@ -1,0 +1,9 @@
+{
+  "name": "qscope-platform",
+  "version": "2.1.0",
+  "private": true,
+  "description": "QSCOPE — Quantum Sensor Condition Observation & Prognostics Engine",
+  "scripts": {
+    "build": "cd frontend && npm install && npm run build"
+  }
+}

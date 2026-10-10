@@ -1,0 +1,10 @@
+# ATOM-QSA Optional Quantum Dependencies
+# Install only if quantum simulation branch is needed
+# pip install -r requirements-quantum.txt
+
+# These are OPTIONAL and separate from core installation.
+# The quantum simulation branch is independent of core estimator-risk calculation.
+# Never claim quantum advantage from simulated quantum-state encoding.
+
+qiskit==1.2.4
+pennylane==0.38.1

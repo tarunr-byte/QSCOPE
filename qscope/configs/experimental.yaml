@@ -1,0 +1,34 @@
+# ATOM-QSA Experimental Profile
+# For published experimental datasets
+# Reject missing required calibration; never silently fall back to simulation.
+
+mode: experimental
+window_size: 60
+baseline_windows: 8
+
+# Measurement model parameters: MUST be set from instrument calibration
+# These are placeholder values that will cause calibration validation to flag them
+measurement_p0: 0.5
+measurement_amplitude: 0.5
+measurement_contrast: 0.88
+measurement_phi0: 0.0
+
+uncertainty_profile: narrow
+threshold: 0.067349
+
+cusum_k: 0.002
+cusum_h: 0.05
+
+atom_count_default: 2000
+shots: 2000
+seed: 42
+
+database_path: atom_qsa_exp.db
+log_level: INFO
+
+cors_origins:
+  - http://localhost:3000
+
+max_upload_size_mb: 100
+quantum_enabled: false
+quantum_backend: auto

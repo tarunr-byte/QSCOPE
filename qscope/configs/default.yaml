@@ -1,0 +1,44 @@
+# ATOM-QSA Default Configuration
+# Local development / synthetic experiments profile
+
+mode: synthetic
+window_size: 60
+baseline_windows: 8
+
+# Measurement model: p(phi) = p0 + A * C * cos(phi + phi0)
+measurement_p0: 0.5
+measurement_amplitude: 0.5
+measurement_contrast: 0.88
+measurement_phi0: 0.0
+
+# Uncertainty envelope
+uncertainty_profile: wide
+
+# Decision threshold (Phase 20 illustrative default; not a hardware safety limit)
+threshold: 0.067349
+
+# CUSUM health monitor (diagram starting values; must be calibrated on real baseline data)
+cusum_k: 0.002
+cusum_h: 0.05
+
+# Defaults
+atom_count_default: 2000
+shots: 2000
+seed: 42
+
+# Storage
+database_path: atom_qsa.db
+
+# Logging
+log_level: INFO
+
+# CORS (restrict in production)
+cors_origins:
+  - http://localhost:3000
+  - http://localhost:8000
+
+max_upload_size_mb: 50
+
+# Quantum simulation (optional, separate from core)
+quantum_enabled: false
+quantum_backend: auto

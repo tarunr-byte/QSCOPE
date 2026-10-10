@@ -1,0 +1,2 @@
+class HealthMonitorManager:
+    pass

@@ -1,0 +1,51 @@
+{
+  "version": 2,
+  "buildCommand": "cd frontend && npm install && npm run build",
+  "outputDirectory": "frontend/dist",
+  "rewrites": [
+    {
+      "source": "/health",
+      "destination": "/api/index.py"
+    },
+    {
+      "source": "/version",
+      "destination": "/api/index.py"
+    },
+    {
+      "source": "/upload-csv",
+      "destination": "/api/index.py"
+    },
+    {
+      "source": "/analyze-window",
+      "destination": "/api/index.py"
+    },
+    {
+      "source": "/decision",
+      "destination": "/api/index.py"
+    },
+    {
+      "source": "/history",
+      "destination": "/api/index.py"
+    },
+    {
+      "source": "/audit-log",
+      "destination": "/api/index.py"
+    },
+    {
+      "source": "/export",
+      "destination": "/api/index.py"
+    },
+    {
+      "source": "/quantum/:path*",
+      "destination": "/api/index.py"
+    },
+    {
+      "source": "/api/:path*",
+      "destination": "/api/index.py"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
